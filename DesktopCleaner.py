@@ -65,7 +65,7 @@ def cleanWordDocs(source_directory, word_document_directory):
             # Move the file to the destination directory
             shutil.move(source_path, word_document_directory)
 
-# Moves Word Documents to a specified directory.
+# Moves text files to a specified directory.
 # Takes a source directory and a destination directory as arguments.
 def cleanTextFiles(source_directory, text_document_directory):
 
