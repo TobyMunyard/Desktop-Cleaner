@@ -33,7 +33,7 @@ def cleanImages(source_directory, image_directory):
     files = os.listdir(source_directory)
 
     for file in files:
-        if file.lower().endswith('.jpg') or file.lower().endswith('.png'):
+        if file.lower().endswith('.jpg') or file.lower().endswith('.jpeg') or file.lower().endswith('.png'):
             # Construct the full path to the source file
             source_path = os.path.join(source_directory, file)
             # Move the file to the destination directory
@@ -59,7 +59,7 @@ def cleanWordDocs(source_directory, word_document_directory):
     files = os.listdir(source_directory)
 
     for file in files:
-        if file.lower().endswith('.docx'):
+        if file.lower().endswith('.docx') or file.lower().endswith('.doc'):
             # Construct the full path to the source file
             source_path = os.path.join(source_directory, file)
             # Move the file to the destination directory
